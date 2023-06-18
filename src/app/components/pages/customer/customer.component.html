@@ -1,0 +1,14 @@
+<div>
+    <h1>Customers</h1>
+</div><br>
+<form>
+    <table style="width: 1000px;">
+        <tbody>
+            <tr *ngFor="let l of list">
+                <td>
+                    <a class="btn" (click)="Redirect(l.id)">{{l.name}} {{l.surName}}</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>

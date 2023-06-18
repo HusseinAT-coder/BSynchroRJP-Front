@@ -1,0 +1,13 @@
+<form #form="ngForm" (submit)="Create()">
+    <!-- <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="" required>
+    </div> -->
+
+    <div class="form-group">
+        <label for="credit">Credit:</label>
+        <input type="number" id="credit" [(ngModel)]="credit" [ngModelOptions]="{standalone: true}">
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
